@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+}
+
+.calculator {
+    background: #0f3460;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+    width: 380px;
+}
+
+.display {
+    background: #1a1a2e;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    min-height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.expression {
+    color: #a0a0a0;
+    font-size: 14px;
+    word-wrap: break-word;
+    max-width: 100%;
+    min-height: 20px;
+}
+
+.result {
+    color: #e94560;
+    font-size: 28px;
+    font-weight: bold;
+    word-wrap: break-word;
+    max-width: 100%;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.scientific-btns {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #1a1a2e;
+}
+
+.basic-btns {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+}
+
+.btn {
+    border: none;
+    border-radius: 8px;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+
+.num {
+    background: #1a1a2e;
+    color: #fff;
+}
+
+.op {
+    background: #e94560;
+    color: #fff;
+}
+
+.sci {
+    background: #16213e;
+    color: #a0a0a0;
+    font-size: 13px;
+    padding: 10px;
+}
+
+.clear {
+    background: #ff6b6b;
+    color: #fff;
+}
+
+.delete {
+    background: #ffa502;
+    color: #fff;
+}
+
+.equals {
+    background: #2ed573;
+    color: #fff;
+}
